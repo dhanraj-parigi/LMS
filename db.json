@@ -1,0 +1,102 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "React Basics",
+      "description": "Learn React fundamentals including components, props and hooks.",
+      "video": "https://www.youtube.com/embed/bMknfKXIFA8",
+      "instructor": "John",
+      "duration": "5 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Fundamentals",
+      "description": "Understand variables, functions, loops and core JavaScript concepts.",
+      "video": "https://www.youtube.com/embed/PkZNo7MFNFg",
+      "instructor": "Alex",
+      "duration": "6 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+    },
+    {
+      "id": 3,
+      "title": "Python for Beginners",
+      "description": "Start programming with Python and learn syntax, loops and functions.",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "instructor": "David",
+      "duration": "4 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+    },
+    {
+      "id": 4,
+      "title": "HTML & CSS",
+      "description": "Build beautiful websites using HTML and CSS basics.",
+      "video": "https://www.youtube.com/embed/mU6anWqZJcc",
+      "instructor": "Sarah",
+      "duration": "3 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+    },
+    {
+      "id": 5,
+      "title": "Node.js Basics",
+      "description": "Learn backend development with Node.js.",
+      "video": "https://www.youtube.com/embed/TlB_eWDSMt4",
+      "instructor": "Mike",
+      "duration": "5 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+    },
+    {
+      "id": 6,
+      "title": "MongoDB Essentials",
+      "description": "Learn how to store and manage data using MongoDB.",
+      "video": "https://www.youtube.com/embed/-56x56UppqQ",
+      "instructor": "Emma",
+      "duration": "4 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+    },
+    {
+      "id": 7,
+      "title": "SQL Basics",
+      "description": "Learn SQL queries and database fundamentals.",
+      "video": "https://www.youtube.com/embed/HXV3zeQKqGY",
+      "instructor": "Daniel",
+      "duration": "5 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+    },
+    {
+      "id": 8,
+      "title": "Git & GitHub",
+      "description": "Understand version control and collaboration using GitHub.",
+      "video": "https://www.youtube.com/embed/RGOj5yH7evk",
+      "instructor": "Chris",
+      "duration": "3 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
+    },
+    {
+      "id": 9,
+      "title": "Java Programming",
+      "description": "Learn Java programming language from beginner level.",
+      "video": "https://www.youtube.com/embed/eIrMbAQSU34",
+      "instructor": "Robert",
+      "duration": "6 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+    },
+    {
+      "id": 10,
+      "title": "Machine Learning Basics",
+      "description": "Introduction to machine learning algorithms and models.",
+      "video": "https://www.youtube.com/embed/GwIo3gDZCVQ",
+      "instructor": "Sophia",
+      "duration": "7 hours",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+    }
+  ],
+  "users": [
+    {
+      "name": "Dhanu",
+      "email": "pargidhanraj13@gmail.com",
+      "password": "1234567890",
+      "id": 1
+    }
+  ]
+}

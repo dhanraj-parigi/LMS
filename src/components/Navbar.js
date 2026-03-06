@@ -1,10 +1,23 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+
+  const navigate = useNavigate();
+
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    navigate("/login");
+  };
+
   return (
     <nav className="navbar navbar-dark bg-dark fixed-top">
       <div className="container-fluid">
+
         <a className="navbar-brand" href="/">LMS Platform</a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -18,8 +31,10 @@ function Navbar() {
           className="offcanvas offcanvas-end text-bg-dark"
           id="offcanvasDarkNavbar"
         >
+
           <div className="offcanvas-header">
             <h5 className="offcanvas-title">Menu</h5>
+
             <button
               type="button"
               className="btn-close btn-close-white"
@@ -28,7 +43,9 @@ function Navbar() {
           </div>
 
           <div className="offcanvas-body">
+
             <ul className="navbar-nav">
+
               <li className="nav-item">
                 <a className="nav-link active" href="/">Home</a>
               </li>
@@ -37,14 +54,37 @@ function Navbar() {
                 <a className="nav-link" href="/courses">Courses</a>
               </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="/login">Login</a>
-              </li>
+              {user ? (
+                <>
+                  <li className="nav-item">
+                    <span className="nav-link">
+                      👤 {user.name}
+                    </span>
+                  </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="/signup">Signup</a>
-              </li>
+                  <li className="nav-item">
+                    <button
+                      className="btn btn-danger mt-2"
+                      onClick={handleLogout}
+                    >
+                      Logout
+                    </button>
+                  </li>
+                </>
+              ) : (
+                <>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/login">Login</a>
+                  </li>
+
+                  <li className="nav-item">
+                    <a className="nav-link" href="/signup">Signup</a>
+                  </li>
+                </>
+              )}
+
             </ul>
+
           </div>
         </div>
 
@@ -54,6 +94,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-
