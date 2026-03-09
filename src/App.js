@@ -1,35 +1,49 @@
-import React from "react";  
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
+
 import HomePage from "./pages/HomePage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import CoursesPage from "./pages/CoursesPage";
+import CourseDetailsPage from "./pages/CourseDetailsPage";
+import CoursePlayerPage from "./pages/CoursePlayerPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import MyCoursesPage from "./pages/MyCoursesPage";
-import CourseDetailsPage from "./pages/CourseDetailsPage";
-
+import AdminDashboard from "./pages/AdminDashboard";
+import Dashboard from "./pages/DashboardPage";
 
 function App() {
-  return (
-    <BrowserRouter>
 
-      <Navbar />
+return (
 
-      <Routes>
+<Router>
 
-        <Route path="/" element={<HomePage />} />
+<Navbar />
 
-        <Route path="/login" element={<LoginPage />} />
+<Routes>
 
-        <Route path="/signup" element={<SignupPage />} />
+<Route path="/" element={<HomePage />} />
 
-        <Route path="/mycourses" element={<MyCoursesPage />} />
+<Route path="/courses" element={<CoursesPage />} />
 
-        <Route path="/course/:id" element={<CourseDetailsPage />} />
+<Route path="/course/:id" element={<CourseDetailsPage />} />
 
-      </Routes>
+<Route path="/player/:id" element={<CoursePlayerPage />} />
 
-    </BrowserRouter>
-  );
+<Route path="/login" element={<LoginPage />} />
+
+<Route path="/signup" element={<SignupPage />} />
+
+<Route path="/admin" element={<AdminDashboard />} />
+
+<Route path="/dashboard" element={<Dashboard />} />
+
+</Routes>
+
+</Router>
+
+)
+
 }
 
 export default App;

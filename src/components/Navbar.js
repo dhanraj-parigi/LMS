@@ -1,96 +1,106 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
 
-  const navigate = useNavigate();
+const navigate = useNavigate();
 
-  const user = JSON.parse(localStorage.getItem("user"));
+const user = JSON.parse(localStorage.getItem("user"));
 
-  const handleLogout = () => {
-    localStorage.removeItem("user");
-    navigate("/login");
-  };
+const handleLogout = () => {
+localStorage.removeItem("user");
+navigate("/");
+};
 
-  return (
-    <nav className="navbar navbar-dark bg-dark fixed-top">
-      <div className="container-fluid">
+return (
 
-        <a className="navbar-brand" href="/">LMS Platform</a>
+<nav
+style={{
+display:"flex",
+justifyContent:"space-between",
+alignItems:"center",
+padding:"22px 10%",
+background:"#ffffff",
+boxShadow:"0 2px 10px rgba(0,0,0,0.05)"
+}}
+>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
+<Link to="/" style={{textDecoration:"none"}}>
+<h2 style={{color:"#2563eb",fontWeight:"700"}}>LMS</h2>
+</Link>
 
-        <div
-          className="offcanvas offcanvas-end text-bg-dark"
-          id="offcanvasDarkNavbar"
-        >
+<div style={{display:"flex",gap:"25px",alignItems:"center"}}>
 
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title">Menu</h5>
+<Link to="/" style={{textDecoration:"none",color:"#374151"}}>
+Home
+</Link>
 
-            <button
-              type="button"
-              className="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-            ></button>
-          </div>
+<Link to="/courses" style={{textDecoration:"none",color:"#374151"}}>
+Courses
+</Link>
 
-          <div className="offcanvas-body">
+{/* Student Dashboard */}
+{user && user.role === "student" && (
+<Link to="/dashboard" style={{textDecoration:"none",color:"#374151"}}>
+Dashboard
+</Link>
+)}
 
-            <ul className="navbar-nav">
+{/* Admin Panel */}
+{user && user.role === "admin" && (
+<Link to="/admin" style={{textDecoration:"none",color:"#374151"}}>
+Admin Panel
+</Link>
+)}
 
-              <li className="nav-item">
-                <a className="nav-link active" href="/">Home</a>
-              </li>
+{/* Login */}
+{!user && (
+<Link to="/login" style={{textDecoration:"none",color:"#374151"}}>
+Login
+</Link>
+)}
 
-              <li className="nav-item">
-                <a className="nav-link" href="/courses">Courses</a>
-              </li>
+{/* Signup */}
+{!user && (
+<Link to="/signup">
+<button
+style={{
+background:"#2563eb",
+color:"white",
+border:"none",
+padding:"8px 20px",
+borderRadius:"6px",
+cursor:"pointer"
+}}
+>
+Sign Up
+</button>
+</Link>
+)}
 
-              {user ? (
-                <>
-                  <li className="nav-item">
-                    <span className="nav-link">
-                      👤 {user.name}
-                    </span>
-                  </li>
+{/* Logout */}
+{user && (
+<button
+onClick={handleLogout}
+style={{
+background:"#ef4444",
+color:"white",
+border:"none",
+padding:"8px 20px",
+borderRadius:"6px",
+cursor:"pointer"
+}}
+>
+Logout
+</button>
+)}
 
-                  <li className="nav-item">
-                    <button
-                      className="btn btn-danger mt-2"
-                      onClick={handleLogout}
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </>
-              ) : (
-                <>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/login">Login</a>
-                  </li>
+</div>
 
-                  <li className="nav-item">
-                    <a className="nav-link" href="/signup">Signup</a>
-                  </li>
-                </>
-              )}
+</nav>
 
-            </ul>
+);
 
-          </div>
-        </div>
-
-      </div>
-    </nav>
-  );
 }
 
 export default Navbar;

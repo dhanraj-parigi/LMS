@@ -7,33 +7,37 @@
       "video": "https://www.youtube.com/embed/bMknfKXIFA8",
       "instructor": "John",
       "duration": "5 hours",
+      "rating": 4.5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
     },
     {
       "id": 2,
       "title": "JavaScript Fundamentals",
-      "description": "Understand variables, functions, loops and core JavaScript concepts.",
+      "description": "Understand variables, functions and loops.",
       "video": "https://www.youtube.com/embed/PkZNo7MFNFg",
       "instructor": "Alex",
       "duration": "6 hours",
+      "rating": 4.6,
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
     },
     {
       "id": 3,
       "title": "Python for Beginners",
-      "description": "Start programming with Python and learn syntax, loops and functions.",
+      "description": "Start programming with Python.",
       "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
       "instructor": "David",
       "duration": "4 hours",
+      "rating": 4.7,
       "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
     },
     {
       "id": 4,
       "title": "HTML & CSS",
-      "description": "Build beautiful websites using HTML and CSS basics.",
+      "description": "Build websites using HTML and CSS.",
       "video": "https://www.youtube.com/embed/mU6anWqZJcc",
       "instructor": "Sarah",
       "duration": "3 hours",
+      "rating": 4.4,
       "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
     },
     {
@@ -43,15 +47,17 @@
       "video": "https://www.youtube.com/embed/TlB_eWDSMt4",
       "instructor": "Mike",
       "duration": "5 hours",
+      "rating": 4.6,
       "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
     },
     {
       "id": 6,
       "title": "MongoDB Essentials",
-      "description": "Learn how to store and manage data using MongoDB.",
+      "description": "Learn MongoDB database fundamentals.",
       "video": "https://www.youtube.com/embed/-56x56UppqQ",
       "instructor": "Emma",
       "duration": "4 hours",
+      "rating": 4.5,
       "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
     },
     {
@@ -61,42 +67,213 @@
       "video": "https://www.youtube.com/embed/HXV3zeQKqGY",
       "instructor": "Daniel",
       "duration": "5 hours",
+      "rating": 4.3,
       "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
     },
     {
       "id": 8,
       "title": "Git & GitHub",
-      "description": "Understand version control and collaboration using GitHub.",
+      "description": "Understand version control using GitHub.",
       "video": "https://www.youtube.com/embed/RGOj5yH7evk",
       "instructor": "Chris",
       "duration": "3 hours",
+      "rating": 4.8,
       "image": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg"
     },
     {
       "id": 9,
       "title": "Java Programming",
-      "description": "Learn Java programming language from beginner level.",
+      "description": "Learn Java programming language.",
       "video": "https://www.youtube.com/embed/eIrMbAQSU34",
       "instructor": "Robert",
       "duration": "6 hours",
+      "rating": 4.6,
       "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
     },
     {
       "id": 10,
       "title": "Machine Learning Basics",
-      "description": "Introduction to machine learning algorithms and models.",
+      "description": "Introduction to machine learning.",
       "video": "https://www.youtube.com/embed/GwIo3gDZCVQ",
       "instructor": "Sophia",
       "duration": "7 hours",
+      "rating": 4.9,
       "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
+    },
+
+    {
+      "id": 11,
+      "title": "Data Structures",
+      "description": "Learn arrays, stacks, queues and trees.",
+      "video": "https://www.youtube.com/embed/RBSGKlAvoiM",
+      "instructor": "Kevin",
+      "duration": "6 hours",
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Data_Structures.png"
+    },
+    {
+      "id": 12,
+      "title": "Algorithms Basics",
+      "description": "Learn sorting and searching algorithms.",
+      "video": "https://www.youtube.com/embed/8hly31xKli0",
+      "instructor": "Anna",
+      "duration": "5 hours",
+      "rating": 4.5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Algorithm.svg"
+    },
+    {
+      "id": 13,
+      "title": "React Advanced",
+      "description": "Learn advanced React concepts and state management.",
+      "video": "https://www.youtube.com/embed/w7ejDZ8SWv8",
+      "instructor": "Mark",
+      "duration": "6 hours",
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    },
+    {
+      "id": 14,
+      "title": "Next.js Basics",
+      "description": "Build modern web apps using Next.js.",
+      "video": "https://www.youtube.com/embed/1WmNXEVia8I",
+      "instructor": "James",
+      "duration": "5 hours",
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
+    },
+    {
+      "id": 15,
+      "title": "Express.js",
+      "description": "Learn server-side development with Express.",
+      "video": "https://www.youtube.com/embed/L72fhGm1tfE",
+      "instructor": "Lucas",
+      "duration": "4 hours",
+      "rating": 4.4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"
+    },
+    {
+      "id": 16,
+      "title": "TypeScript Basics",
+      "description": "Learn typed JavaScript using TypeScript.",
+      "video": "https://www.youtube.com/embed/BwuLxPH8IDs",
+      "instructor": "Olivia",
+      "duration": "5 hours",
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Typescript.svg"
+    },
+    {
+      "id": 17,
+      "title": "Docker Basics",
+      "description": "Containerize applications using Docker.",
+      "video": "https://www.youtube.com/embed/Gjnup-PuquQ",
+      "instructor": "Henry",
+      "duration": "4 hours",
+      "rating": 4.5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_logo.svg"
+    },
+    {
+      "id": 18,
+      "title": "AWS Basics",
+      "description": "Learn cloud computing with AWS.",
+      "video": "https://www.youtube.com/embed/ulprqHHWlng",
+      "instructor": "Daniel",
+      "duration": "6 hours",
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+    },
+    {
+      "id": 19,
+      "title": "Cyber Security Basics",
+      "description": "Learn fundamentals of cyber security.",
+      "video": "https://www.youtube.com/embed/inWWhr5tnEA",
+      "instructor": "Ethan",
+      "duration": "5 hours",
+      "rating": 4.4,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cyber_security_icon.png"
+    },
+    {
+      "id": 20,
+      "title": "Flutter Development",
+      "description": "Build mobile apps using Flutter.",
+      "video": "https://www.youtube.com/embed/x0uinJvhNxI",
+      "instructor": "Mia",
+      "duration": "7 hours",
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png"
+    },
+    {
+      "id": 21,
+      "title": "Android Development",
+      "description": "Build Android apps using Java and Kotlin.",
+      "video": "https://www.youtube.com/embed/fis26HvvDII",
+      "instructor": "Ryan",
+      "duration": "8 hours",
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg"
+    },
+    {
+      "id": 22,
+      "title": "iOS Development",
+      "description": "Build iOS apps using Swift.",
+      "video": "https://www.youtube.com/embed/FcsY1YPBwzQ",
+      "instructor": "Sophia",
+      "duration": "7 hours",
+      "rating": 4.5,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+    },
+    {
+      "id": 23,
+      "title": "Data Science Basics",
+      "description": "Learn data analysis using Python.",
+      "video": "https://www.youtube.com/embed/X3paOmcrTjQ",
+      "instructor": "Liam",
+      "duration": "6 hours",
+      "rating": 4.7,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg"
+    },
+    {
+      "id": 24,
+      "title": "Deep Learning",
+      "description": "Understand neural networks and deep learning.",
+      "video": "https://www.youtube.com/embed/aircAruvnKk",
+      "instructor": "Noah",
+      "duration": "7 hours",
+      "rating": 4.8,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Artificial_Intelligence_logo.svg"
+    },
+    {
+      "id": 25,
+      "title": "DevOps Fundamentals",
+      "description": "Learn CI/CD pipelines and DevOps practices.",
+      "video": "https://www.youtube.com/embed/0yWAtQ6wYNM",
+      "instructor": "Jack",
+      "duration": "5 hours",
+      "rating": 4.6,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg"
     }
   ],
+
   "users": [
     {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
       "name": "Dhanu",
       "email": "pargidhanraj13@gmail.com",
       "password": "1234567890",
-      "id": 1
+      "role": "student"
+    },
+    {
+      "id": 3,
+      "name": "Srikanth",
+      "email": "22w91a66a4@mriet.ac.in",
+      "password": "1234567890",
+      "role": "student"
     }
   ]
 }

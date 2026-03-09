@@ -1,4 +1,4 @@
-import React, {useEffect,useState} from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 function CourseDetailsPage(){
@@ -26,18 +26,22 @@ return(
 <img
 src={course.image}
 alt={course.title}
-style={{width:"200px",marginTop:"20px"}}
+style={{
+width:"200px",
+marginTop:"20px"
+}}
 />
 
-<p style={{marginTop:"20px"}}>{course.description}</p>
+<p style={{marginTop:"20px"}}>
+{course.description}
+</p>
 
 <p><b>Instructor:</b> {course.instructor}</p>
 
 <p><b>Duration:</b> {course.duration}</p>
 
-<p style={{color:"#f59e0b"}}>⭐ {course.rating}</p>
-
 <Link to={`/player/${course.id}`}>
+
 <button
 style={{
 marginTop:"20px",
@@ -50,6 +54,7 @@ borderRadius:"6px"
 >
 Start Learning
 </button>
+
 </Link>
 
 </div>
